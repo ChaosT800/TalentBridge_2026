@@ -1,0 +1,627 @@
+/* ==========================================
+   TALENTBRIDGE DASHBOARD
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#F8FAFC;
+
+}
+
+/* ==========================================
+   LAYOUT
+========================================== */
+
+.dashboard-layout{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.sidebar{
+
+    width:270px;
+
+    background:#0F172A;
+
+    color:#fff;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    height:100vh;
+
+    padding:30px 20px;
+
+    overflow-y:auto;
+
+}
+
+.sidebar-logo{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.sidebar-logo h2{
+
+    font-weight:700;
+
+    color:#fff;
+
+}
+
+.sidebar-menu{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.sidebar-menu li{
+
+    margin-bottom:10px;
+
+}
+
+.sidebar-menu a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:14px 18px;
+
+    text-decoration:none;
+
+    color:#CBD5E1;
+
+    border-radius:14px;
+
+    transition:.3s;
+
+    font-size:16px;
+
+}
+
+.sidebar-menu a:hover{
+
+    background:#2563EB;
+
+    color:white;
+
+    transform:translateX(5px);
+
+}
+
+.sidebar-menu i{
+
+    font-size:20px;
+
+}
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+.main-content{
+
+    margin-left:270px;
+
+    width:calc(100% - 270px);
+
+    padding:35px;
+
+}
+
+/* ==========================================
+   TOPBAR
+========================================== */
+
+.topbar{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px 30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.topbar h3{
+
+    margin:0;
+
+    font-weight:600;
+
+}
+
+.topbar small{
+
+    color:#64748B;
+
+}
+
+/* ==========================================
+   STAT CARDS
+========================================== */
+
+.stat-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(37,99,235,.15);
+
+}
+
+.stat-card h2{
+
+    color:#2563EB;
+
+    font-size:40px;
+
+    font-weight:700;
+
+}
+
+.stat-card p{
+
+    color:#64748B;
+
+    margin-top:10px;
+
+}
+
+/* ==========================================
+   CONTENT CARDS
+========================================== */
+
+.dashboard-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    height:100%;
+
+}
+
+.dashboard-card h4{
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#CBD5E1;
+
+    border-radius:10px;
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:992px){
+
+.sidebar{
+
+    width:100%;
+
+    height:auto;
+
+    position:relative;
+
+}
+
+.main-content{
+
+    margin-left:0;
+
+    width:100%;
+
+}
+
+.dashboard-layout{
+
+    flex-direction:column;
+
+}
+
+}
+/* ==========================================
+   NEW SIDEBAR
+========================================== */
+
+.sidebar{
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:space-between;
+
+}
+
+.sidebar-top{
+
+margin-bottom:30px;
+
+}
+
+.sidebar-logo{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+font-size:26px;
+
+font-weight:700;
+
+color:white;
+
+margin-bottom:25px;
+
+}
+
+.sidebar-logo i{
+
+font-size:34px;
+
+color:#3B82F6;
+
+}
+
+.sidebar-menu{
+
+display:flex;
+
+flex-direction:column;
+
+gap:8px;
+
+}
+
+.sidebar-menu a{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+padding:15px 18px;
+
+border-radius:15px;
+
+text-decoration:none;
+
+color:#CBD5E1;
+
+font-weight:500;
+
+transition:.3s;
+
+position:relative;
+
+}
+
+.sidebar-menu a.active{
+
+background:#2563EB;
+
+color:white;
+
+}
+
+.sidebar-menu a:hover{
+
+background:#1E40AF;
+
+color:white;
+
+}
+
+.sidebar-menu a i{
+
+font-size:20px;
+
+}
+
+.badge-count{
+
+margin-left:auto;
+
+background:#EF4444;
+
+padding:3px 8px;
+
+border-radius:30px;
+
+font-size:11px;
+
+color:white;
+
+}
+
+.sidebar-bottom{
+
+margin-top:auto;
+
+}
+
+.profile-box{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+padding:15px;
+
+background:#1E293B;
+
+border-radius:18px;
+
+margin-bottom:20px;
+
+}
+
+.profile-box img{
+
+width:50px;
+
+height:50px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+}
+
+.profile-box strong{
+
+color:white;
+
+}
+
+.profile-box small{
+
+color:#94A3B8;
+
+}
+
+.logout-btn{
+
+display:block;
+
+text-align:center;
+
+padding:14px;
+
+border-radius:14px;
+
+background:#EF4444;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+background:#DC2626;
+
+color:white;
+
+}
+
+.topbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.notification-btn{
+
+width:48px;
+
+height:48px;
+
+border:none;
+
+background:#2563EB;
+
+color:white;
+
+border-radius:50%;
+
+font-size:18px;
+
+transition:.3s;
+
+}
+
+.notification-btn:hover{
+
+transform:scale(1.08);
+
+}
+/*=========================================
+LATEST JOBS
+=========================================*/
+
+.job-item{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 0;
+
+}
+
+.job-item h5{
+
+margin:0;
+
+font-weight:600;
+
+}
+
+.job-item p{
+
+margin:5px 0 0;
+
+color:#64748B;
+
+}
+
+.job-meta{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+font-size:14px;
+
+}
+
+.job-meta span{
+
+color:#475569;
+
+}
+
+.job-meta i{
+
+color:#2563EB;
+
+margin-right:5px;
+
+}
+/*=========================================
+NOTIFICATIONS
+=========================================*/
+
+.notification-item{
+
+padding:20px;
+
+border-radius:15px;
+
+transition:.3s;
+
+}
+
+.notification-item:hover{
+
+background:#F8FAFC;
+
+}
+
+.notification-item.unread{
+
+border-left:5px solid #2563EB;
+
+background:#EFF6FF;
+
+}
+
+.notification-item h5{
+
+margin-bottom:8px;
+
+font-weight:600;
+
+}
+
+.notification-item p{
+
+margin-bottom:8px;
+
+color:#475569;
+
+}

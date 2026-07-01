@@ -1,0 +1,109 @@
+/* ===========================
+   BUTTONS
+=========================== */
+
+.tb-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:14px 30px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.tb-primary{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+.tb-primary:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.tb-outline{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+}
+
+.tb-outline:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.tb-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+}
+
+.tb-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+.section-title p{
+
+    color:var(--text-light);
+
+    margin-top:15px;
+
+}
