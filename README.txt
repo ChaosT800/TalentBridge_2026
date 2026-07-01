@@ -1,0 +1,1 @@
+Include hero.php, companies.php, features.php, workflow.php, jobs.php, testimonials.php and cta.php in index.php. Link assets/css/components.css in header.php after style.css.
